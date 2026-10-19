@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#15803d" />
+    <script>
+      // Suppress benign [vite] connection messages in sandboxed dev environment
+      (function() {
+        var origError = console.error;
+        console.error = function() {
+          if (arguments.length > 0 && typeof arguments[0] === 'string' && arguments[0].indexOf('[vite]') !== -1) {
+            return;
+          }
+          return origError.apply(console, arguments);
+        };
+        var origWarn = console.warn;
+        console.warn = function() {
+          if (arguments.length > 0 && typeof arguments[0] === 'string' && arguments[0].indexOf('[vite]') !== -1) {
+            return;
+          }
+          return origWarn.apply(console, arguments);
+        };
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <title>AgroRent</title>
+    <meta name="description" content="AgroRent - Smart agricultural platform for machinery equipment rental, livestock & bird marketplace, live delivery tracking with GPS, driver/worker hiring, government schemes, in-app notifications, verified reviews, AI assistant, admin analytics, reports, audit logs and platform management" />
+    <meta property="og:title" content="AgroRent" />
+    <meta property="og:description" content="AgroRent - Smart agricultural platform for machinery equipment rental, livestock & bird marketplace, live delivery tracking with GPS, driver/worker hiring, government schemes, in-app notifications, verified reviews, AI assistant, admin analytics, reports, audit logs and platform management" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
