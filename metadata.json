@@ -1,0 +1,9 @@
+{
+  "name": "AgroRent",
+  "description": "AgroRent - Smart agricultural platform for machinery equipment rental, livestock & bird marketplace, live delivery tracking with GPS, driver/worker hiring, government schemes, in-app notifications, verified reviews, AI assistant, admin analytics, reports, audit logs and platform management",
+  "requestFramePermissions": [
+    "geolocation",
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

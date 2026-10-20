@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+build/
+logs/
+coverage/
+*.log
+.DS_Store
+data/agrorent_pg/

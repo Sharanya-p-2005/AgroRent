@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="agroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15803d" />
+      <stop offset="100%" stop-color="#166534" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+  </defs>
+  <!-- Background Rounded Rect -->
+  <rect width="512" height="512" rx="108" fill="url(#agroGrad)" />
+  
+  <!-- Outer subtle circular ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#22c55e" stroke-width="6" opacity="0.3" stroke-dasharray="16 12" />
+
+  <!-- Stylized Tractor & Sprout Emblem -->
+  <!-- Soil furrow arcs -->
+  <path d="M120 370 C 180 350, 332 350, 392 370" stroke="#86efac" stroke-width="12" stroke-linecap="round" fill="none" />
+  <path d="M140 400 C 200 380, 312 380, 372 400" stroke="#4ade80" stroke-width="8" stroke-linecap="round" fill="none" />
+
+  <!-- Stylized Tractor Body & Wheels -->
+  <!-- Large Rear Wheel -->
+  <circle cx="190" cy="300" r="58" fill="#14532d" stroke="#f0fdf4" stroke-width="10" />
+  <circle cx="190" cy="300" r="24" fill="#86efac" />
+  
+  <!-- Front Wheel -->
+  <circle cx="340" cy="316" r="42" fill="#14532d" stroke="#f0fdf4" stroke-width="8" />
+  <circle cx="340" cy="316" r="18" fill="#86efac" />
+
+  <!-- Chassis & Engine Hood -->
+  <path d="M190 280 L 190 200 L 260 200 L 290 240 L 360 240 L 360 300 L 330 300 L 310 260 L 230 260 L 220 280 Z" fill="#22c55e" stroke="#f0fdf4" stroke-width="8" stroke-linejoin="round" />
+  
+  <!-- Cabin Roof & Window -->
+  <path d="M180 200 L 250 200 L 240 140 L 160 140 Z" fill="#bbf7d0" stroke="#f0fdf4" stroke-width="6" />
+  <!-- Exhaust Stack -->
+  <path d="M320 240 L 320 180 L 330 170" stroke="#fef08a" stroke-width="8" stroke-linecap="round" fill="none" />
+
+  <!-- Sprouting Golden Leaf of Prosperity -->
+  <path d="M256 90 C 280 60, 320 80, 310 110 C 300 130, 270 140, 256 160 C 250 140, 230 110, 256 90 Z" fill="url(#goldGrad)" />
+</svg>

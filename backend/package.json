@@ -1,0 +1,30 @@
+{
+  "name": "agro-rent-backend",
+  "version": "1.0.0",
+  "description": "AgroRent Backend API - Phase 1 Authentication & Role Authorization",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/app.ts",
+    "migrate": "tsx -e \"import('./src/services/migrationService.js').then(m => m.runMigrationsAndSeeds())\""
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.2.16",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^22.14.0",
+    "@types/pg": "^8.11.11",
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2"
+  }
+}
