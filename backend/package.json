@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "tsx src/app.ts",
     "start": "tsx src/server.ts",
-    "migrate": "tsx -e \"import('./src/services/migrationService.js').then(m => m.runMigrationsAndSeeds())\""
+    "migrate": "tsx -e \"import('./src/services/migrationService.js').then(m => m.runMigrationsAndSeeds())"
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.2.16",
@@ -17,7 +17,8 @@
     "express": "^4.21.2",
     "helmet": "^8.0.0",
     "jsonwebtoken": "^9.0.2",
-    "pg": "^8.13.3"
+    "pg": "^8.13.3",
+    "tsx": "^4.21.0"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
@@ -26,7 +27,6 @@
     "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "^22.14.0",
     "@types/pg": "^8.11.11",
-    "tsx": "^4.21.0",
     "typescript": "~5.8.2"
   }
 }
