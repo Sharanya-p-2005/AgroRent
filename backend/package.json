@@ -1,3 +1,4 @@
+
 {
   "name": "agro-rent-backend",
   "version": "1.0.0",
@@ -5,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx src/app.ts",
+    "start": "tsx src/server.ts",
     "migrate": "tsx -e \"import('./src/services/migrationService.js').then(m => m.runMigrationsAndSeeds())\""
   },
   "dependencies": {
